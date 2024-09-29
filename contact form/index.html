@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <div class="msg-box">
+          <div class="msg">
+            <p>Full Name</p>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="name"
+              onkeyup="validatename()"
+            />
+            <span id="name-error"></span>
+          </div>
+          <div class="msg">
+            <p>Phone No.</p>
+            <input
+              type="number"
+              placeholder="123-456-7890"
+              id="phone"
+              onkeyup="validatephone()"
+            />
+            <span id="number-error"></span>
+          </div>
+          <div class="msg">
+            <p>Enter id</p>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              id="mail"
+              onkeyup="validateemail()"
+            />
+            <span id="email-error"></span>
+          </div>
+          <div class="msg">
+            <p>Your Massage</p>
+            <input
+              class="mg"
+              type="text"
+              placeholder="Enter your massage"
+              id="message"
+              onkeyup="validatemsg()"
+            />
+            <span id="msg-error"></span>
+          </div>
+          <button class="btn" onclick="return validateform()">Submit</button>
+          <span id="submit-error"> </span>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

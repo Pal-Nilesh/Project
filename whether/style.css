@@ -1,0 +1,182 @@
+body {
+  background-color: #131312;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.card {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  height: 90vh;
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 475px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+}
+.search-bar {
+  border: 0;
+  outline: 0;
+  height: 6vh;
+  width: 20vw;
+  margin-right: 15px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 18px;
+}
+
+.search {
+  height: 20vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 8vh;
+  width: 4vw;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+}
+
+.black {
+  height: 4vh;
+  width: 2vw;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rain {
+  height: 30vh;
+  width: 25vw;
+}
+.city {
+  height: auto;
+  max-width: 100%;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.bottom {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 69px;
+}
+
+.humidity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.speed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.water {
+  height: 10vh;
+  width: 7vw;
+  padding-bottom: 9px;
+  padding-right: 25px;
+}
+
+.wind {
+  height: 10vh;
+  width: 7vw;
+  padding-bottom: 9px;
+}
+
+/* for tablet */
+
+@media (max-width: 768px) {
+  .card {
+    width: 39vw;
+    margin: 50px 235px;
+  }
+  .icon {
+    height: 7vh;
+    width: 6vw;
+  }
+  .search-bar {
+    height: 3vh;
+    font-size: 14px;
+  }
+  .black {
+    width: 3vw;
+  }
+  .bottom {
+    width: 35vw;
+  }
+}
+
+/* FOR MOBILE */
+
+@media (max-width: 425px) {
+  .card {
+    height: 80vh;
+    width: 80vw;
+    margin: 50px 37px;
+  }
+  .search {
+    margin-top: 5rem;
+  }
+  .rain {
+    width: 36vw;
+  }
+  .search-bar {
+    height: 3vh;
+    width: 41vw;
+    font-size: 12px;
+  }
+  .icon {
+    height: 6vh;
+    width: 9vw;
+  }
+  .hero {
+    margin-top: 40px;
+    margin-bottom: -3rem;
+  }
+  .bottom {
+    width: 70vw;
+    padding-bottom: 96px;
+  }
+
+  .water {
+    height: 8vh;
+    width: 10vw;
+    padding-right: 9px;
+  }
+  .wind {
+    height: 9vh;
+  }
+}
